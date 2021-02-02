@@ -12,6 +12,6 @@ public class HomeCtrl {
 
     @GetMapping("/index")
     public String index() {
-        return "hello world123";
+        return "hello world123456";
     }
 }
