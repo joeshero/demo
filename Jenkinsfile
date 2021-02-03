@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build project') {
             steps {
-                sh label: '', script: 'mvn clean package -DskipTests'
+                sh 'mvn clean package -DskipTests dockerfile:build'
             }
         }
         stage('publish') {
